@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="light" lang="en">
   <head>
-    <title>Codingtutor</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Coding Tutor</title>
+    <meta property="og:type" content="website">
+    <meta name="description" content="Master the art of coding with CodingTutor.Online – the ultimate platform for freshers looking to dive into the world of tech. Our expert tutors provide comprehensive courses, personalized problem-solving guidance, and real-world project support. Prepare for success with mock tests and access abundant coding resources. Start your journey today and unlock endless opportunities in the exciting field of coding.">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
@@ -13,4 +18,9 @@
   <body>
     <%= yield %>
   </body>
+  <footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/bold-and-bright.js"></script>
+  </footer>
 </html>
