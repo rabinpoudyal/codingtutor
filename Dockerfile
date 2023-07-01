@@ -1,5 +1,5 @@
 # Use an official Ruby runtime as a parent image
-FROM ruby:3.0.3
+FROM ruby:3.1.2
 
 # Set the working directory
 WORKDIR /app
