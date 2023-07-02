@@ -103,7 +103,7 @@ namespace :deploy do
           # invoke 'dotenv:check'
           # invoke 'dotenv:setup'
           # invoke 'dotenv:hook'
-          execute("cd #{release_path} && bundle install")
+          execute("cd #{release_path} && gem install bundler && bundle install")
           execute("cd #{release_path} && yarn install --production --silent --no-progress --no-audit --no-optional")
         end
       end
