@@ -30,6 +30,10 @@ set :rvm_custom_path, '/home/deploy/.rvm'
 set :rvm_bin_path, '/home/deploy/.rvm/bin'
 # set :bundle_cmd, "/home/deploy/.rvm/gems/ruby-3.1.2/bin/bundler-2.4.1"
 # set :bundle_dir, "/home/deploy/.rvm/gems/ruby-3.1.2"
+set :default_env, {
+  'LC_ALL' => 'C.UTF-8',
+  'LANG' => 'C.UTF-8'
+}
 
 set :rvm_type, :user
 
