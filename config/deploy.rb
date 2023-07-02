@@ -26,7 +26,7 @@ set :puma_prune_bundler, true
 set :puma_restart_command, 'bundle exec pumactl phased-restart' # This is for 0 downtime
 set :puma_control_app, true
 set :rvm_path, '/home/deploy/.rvm'
-set :rvm_custom_path, '/home/deploy/.rvm'
+# set :rvm_custom_path, '/home/deploy/.rvm'
 set :rvm_bin_path, '/home/deploy/.rvm/bin'
 
 set :rvm_type, :user
