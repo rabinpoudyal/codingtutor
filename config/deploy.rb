@@ -99,10 +99,10 @@ namespace :deploy do
     task :yarn_install do
       on roles(:web) do
         within release_path do
-          invoke 'dotenv:read'
+          # invoke 'dotenv:read'
           # invoke 'dotenv:check'
-          invoke 'dotenv:setup'
-          invoke 'dotenv:hook'
+          # invoke 'dotenv:setup'
+          # invoke 'dotenv:hook'
           execute("cd #{release_path} && yarn install --production --silent --no-progress --no-audit --no-optional")
         end
       end
