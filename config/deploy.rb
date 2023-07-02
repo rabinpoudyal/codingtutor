@@ -95,19 +95,17 @@ namespace :deploy do
   after :finishing, :cleanup
   after 'puma:restart', 'deploy:restart_nginx'
 
-  # before 'deploy:assets:precompile', 'deploy:yarn_install'
+  before 'deploy:assets:precompile', 'deploy:yarn_install'
   namespace :deploy do
     desc 'Run rake yarn install'
     task :yarn_install do
       on roles(:web) do
         within release_path do
-          # invoke 'dotenv:read'
-          # invoke 'dotenv:check'
-          # invoke 'dotenv:setup'
-          # invoke 'dotenv:hook'
-          # execute("cd #{release_path} && bundle install")
+          invoke 'dotenv:read'
+          invoke 'dotenv:check'
+          invoke 'dotenv:setup'
+          invoke 'dotenv:hook'
           execute("cd #{release_path} && yarn install --production --silent --no-progress --no-audit --no-optional")
-          # execute("cd #{release_path} && bundle exec rails assets:precompile")
         end
       end
     end
