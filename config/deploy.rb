@@ -28,8 +28,8 @@ set :puma_control_app, true
 set :rvm_path, '/home/deploy/.rvm'
 set :rvm_custom_path, '/home/deploy/.rvm'
 set :rvm_bin_path, '/home/deploy/.rvm/bin'
-set :bundle_cmd, "/home/deploy/.rvm/gems/ruby-3.1.2/bin/bundler-2.4.1"
-set :bundle_dir, "/home/deploy/.rvm/gems/ruby-3.1.2"
+# set :bundle_cmd, "/home/deploy/.rvm/gems/ruby-3.1.2/bin/bundler-2.4.1"
+# set :bundle_dir, "/home/deploy/.rvm/gems/ruby-3.1.2"
 
 set :rvm_type, :user
 
@@ -107,6 +107,7 @@ namespace :deploy do
           # invoke 'dotenv:hook'
           # execute("cd #{release_path} && bundle install")
           execute("cd #{release_path} && yarn install --production --silent --no-progress --no-audit --no-optional")
+          execute("cd #{release_path} && bundle exec rails assets:precompile")
         end
       end
     end
