@@ -22,6 +22,8 @@ set :nginx_use_http2, false
 set :nginx_downstream_uses_ssl, false
 set :attach_response_time_in_log, true
 set :env_file, '.env.production'
+set :default_shell, '/bin/bash -l'
+
 
 set :ssh_options, {
   forward_agent: true,
