@@ -97,7 +97,7 @@ namespace :deploy do
   task :symlink_puma_service do 
     on roles(:app) do 
       within release_path do 
-        execute "cd #{release_path} && sudo ln -s #{release_path}/puma_deploy_production.service /etc/systemd/puma.service"
+        execute "cd #{release_path} && sudo ln -s #{release_path}/puma_deploy_production.service /etc/systemd/puma_deploy_production.service"
       end
     end
   end
