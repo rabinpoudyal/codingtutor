@@ -9,7 +9,7 @@ role :web, %w[deploy@170.64.165.188]
 role :db,  %w[deploy@170.64.165.188]
 
 # Define server(s)
-server '170.64.165.188', user: 'deploy', roles: %w[web]
+server '170.64.165.188', user: 'deploy', roles: %w[web app]
 
 set :nginx_server_name, 'codingtutor.online'
 set :nginx_config_name, "#{fetch(:application)}_#{fetch(:stage)}"
@@ -22,7 +22,7 @@ set :nginx_use_http2, false
 set :nginx_downstream_uses_ssl, false
 set :attach_response_time_in_log, true
 set :env_file, '.env.production'
-set :default_shell, '/bin/bash -l'
+# set :default_shell, '/bin/bash -l'
 
 
 set :ssh_options, {

@@ -34,6 +34,8 @@ set :rvm_bin_path, '/home/deploy/.rvm/bin'
 #   'LC_ALL' => 'C.UTF-8',
 #   'LANG' => 'C.UTF-8'
 # }
+set :pty, true
+
 
 set :rvm_type, :user
 
@@ -92,12 +94,21 @@ namespace :deploy do
     end
   end
 
+  task :symlink_puma_service do 
+    on roles(:app) do 
+      within release_path do 
+        execute "cd #{release_path} && sudo ln -s #{release_path}/puma_deploy_production.service /etc/systemd/system/puma_deploy_production.service"
+      end
+    end
+  end
+
   before :publishing, 'puma:config' # Upload puma configuration to server
   before :publishing, 'puma:nginx_config' # Upload nginx configuration to server
 
   # after :finishing, 'deploy:on_finished_tasks'
   after :finishing, :cleanup
   after 'puma:restart', 'deploy:restart_nginx'
+  before 'puma:restart', 'deploy:symlink_puma_service'
 
   before 'deploy:assets:precompile', 'deploy:yarn_install'
   namespace :deploy do
