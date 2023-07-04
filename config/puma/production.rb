@@ -1,26 +1,21 @@
-# Place in /config/puma/production.rb
-
-rails_env = "production"
-environment rails_env
-
-max_threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }
-min_threads_count = ENV.fetch("RAILS_MIN_THREADS") { max_threads_count }
-threads min_threads_count, max_threads_count
-
-worker_timeout 3600 if ENV.fetch("RAILS_ENV", "development") == "development"
-
-app_dir = "/home/deploy/deploy/shared" # Update me with your root rails app path
-
-bind  "unix://#{app_dir}/tmp/sockets/puma.sock"
-pidfile "#{app_dir}/tmp/puma.pid"
-state_path "#{app_dir}/tmp/puma.state"
-directory "#{app_dir}/"
-
-stdout_redirect "#{app_dir}/log/puma.stdout.log", "#{app_dir}/log/puma.stderr.log", true
+environment 'production'
 
 workers 2
-threads 1,2
+threads 1, 6
 
-activate_control_app "unix://#{app_dir}/tmp/shared/pumactl.sock"
+app_dir = File.expand_path("../../../../", __FILE__)
+shared_dir = "#{app_dir}/shared"
 
-prune_bundler
+bind "unix://#{shared_dir}/tmp/sockets/puma.sock"
+pidfile "#{shared_dir}/tmp/pids/puma.pid"
+state_path "#{shared_dir}/tmp/pids/puma.state"
+
+stdout_redirect "#{shared_dir}/log/puma.stdout.log", "#{shared_dir}/log/puma.stderr.log", true
+
+activate_control_app "unix://#{shared_dir}/tmp/sockets/pumactl.sock"
+
+preload_app!
+
+on_worker_boot do
+  ActiveRecord::Base.establish_connection if defined?(ActiveRecord)
+end
