@@ -97,7 +97,7 @@ namespace :deploy do
   task :symlink_puma_service do 
     on roles(:app) do 
       within release_path do 
-        execute "cd #{release_path} && sudo ln -s #{release_path}/puma_deploy_production.service /etc/systemd/system/puma_deploy_production.service"
+        execute "cd #{release_path} && sudo ln -s #{release_path}/puma_deploy_production.service /etc/systemd/puma.service"
       end
     end
   end
@@ -108,7 +108,7 @@ namespace :deploy do
   # after :finishing, 'deploy:on_finished_tasks'
   after :finishing, :cleanup
   after 'puma:restart', 'deploy:restart_nginx'
-  # before 'puma:restart', 'deploy:symlink_puma_service'
+  before 'puma:restart', 'deploy:symlink_puma_service'
 
   before 'deploy:assets:precompile', 'deploy:yarn_install'
   namespace :deploy do
