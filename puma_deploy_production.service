@@ -1,17 +1,24 @@
-
 [Unit]
-Description=Puma HTTP Server
+Description=Puma HTTP Server for codingtutor (prod)
 After=network.target
+
 
 [Service]
 Type=simple
-User=myuser
+User=deploy
 WorkingDirectory=/home/deploy/deploy/current
-Environment=RAILS_ENV=production
+# Support older bundler versions where file descriptors weren't kept
+# See https://github.com/rubygems/rubygems/issues/3254
+ExecStart=/home/deploy/.rvm/bin/rvm default do bundle exec --keep-file-descriptors puma -C /home/deploy/deploy/current/config/puma/production.rb
+ExecReload=/bin/kill -USR1 $MAINPID
+StandardOutput=append:/home/deploy/deploy/shared/log/puma_access.log
+StandardError=append:/home/deploy/deploy/shared/log/puma_error.log
 
-ExecStart=bundle exec puma -C /home/deploy/deploy/current/config/puma/production.rb
+
 Restart=always
-KillMode=process
+RestartSec=1
+
+SyslogIdentifier=puma
 
 [Install]
 WantedBy=multi-user.target
