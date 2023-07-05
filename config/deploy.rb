@@ -89,7 +89,7 @@ namespace :deploy do
   end
 
   task :restart_nginx do
-    on roles(:web) do
+    on roles(:app) do
       execute :sudo, :service, 'nginx reload'
     end
   end
