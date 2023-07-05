@@ -97,6 +97,8 @@ namespace :deploy do
   task :symlink_puma_service do 
     on roles(:app) do 
       within release_path do 
+        # Delete the existing symlink if it exists
+        execute "sudo rm -f /etc/systemd/system/puma_deploy_production.service"
         execute "cd #{release_path} && sudo ln -sv #{release_path}/puma_deploy_production.service /etc/systemd/system/puma_deploy_production.service"
       end
     end
