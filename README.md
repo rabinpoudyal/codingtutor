@@ -20,5 +20,7 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+- In the /etc/nginx/nginx.conf change user to `root` if you get error like permission denied for socket
+- Remove the defailt file in /etc/nginx/sites-enabled/default and /etc/nginx/sites-available/default
 
 * ...
