@@ -13,3 +13,17 @@
  *= require_tree .
  *= require_self
  */
+
+ .bs-icon-dark {
+    color: #fff;
+    background-color: #343a40;
+ }
+
+ .bg-primary-subtle {
+    background-color: #fff !important;
+    border: 1px solid #343a40 !important;
+ }
+
+ .connected-arch {
+
+ }
