@@ -24,6 +24,11 @@
     border: 1px solid #343a40 !important;
  }
 
- .connected-arch {
+ .hero-background {
+   background-color: #171919;
+   /* opacity: 0.5; */
+ }
 
+ .hero-text {
+   color: #fff;
  }
