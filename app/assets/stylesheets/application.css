@@ -26,9 +26,22 @@
 
  .hero-background {
    background-color: #171919;
+   color: #fff;
    /* opacity: 0.5; */
  }
 
- .hero-text {
+ .hero-text, hero.text > a {
    color: #fff;
  }
+
+ footer ul li a {
+    color: #cacaca;
+ }
+
+ .list-unstyled li {
+    color: #cacaca;
+ }
+
+.text-white {
+  color: #fff !important;
+}
