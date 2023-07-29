@@ -14,34 +14,40 @@
  *= require_self
  */
 
- .bs-icon-dark {
+ bs-icon-dark {
     color: #fff;
-    background-color: #343a40;
+    /* background-color: #343a40; */
  }
 
  .bg-primary-subtle {
-    background-color: #fff !important;
+    /* background-color: #fff !important; */
     border: 1px solid #343a40 !important;
  }
 
  .hero-background {
-   background-color: #171919;
-   color: #fff;
-   /* opacity: 0.5; */
+   /* background-color: #171919; */
+   /* color: #fff; */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
  }
 
  .hero-text, hero.text > a {
-   color: #fff;
+   /* color: #fff; */
  }
 
  footer ul li a {
-    color: #cacaca;
+    /* color: #cacaca; */
  }
 
  .list-unstyled li {
-    color: #cacaca;
+    /* color: #cacaca; */
  }
 
 .text-white {
-  color: #fff !important;
+  /* color: #fff !important; */
+}
+
+.secondary-text {
+   color: #6c757d !important;
 }
