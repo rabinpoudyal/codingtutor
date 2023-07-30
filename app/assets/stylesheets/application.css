@@ -14,40 +14,56 @@
  *= require_self
  */
 
- bs-icon-dark {
-    color: #fff;
-    /* background-color: #343a40; */
- }
-
- .bg-primary-subtle {
-    /* background-color: #fff !important; */
-    border: 1px solid #343a40 !important;
- }
-
  .hero-background {
-   /* background-color: #171919; */
-   /* color: #fff; */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
- }
-
- .hero-text, hero.text > a {
-   /* color: #fff; */
- }
-
- footer ul li a {
-    /* color: #cacaca; */
- }
-
- .list-unstyled li {
-    /* color: #cacaca; */
- }
-
-.text-white {
-  /* color: #fff !important; */
+   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dpugbcmpg/image/upload/v1690624341/next-academy-JyJwO0K5fWM-unsplash_dsrfi0.jpg');
+   background-size: cover;
+   height: 75vh;
+   background-position: center;
 }
 
-.secondary-text {
-   color: #6c757d !important;
+.subheading {
+   color: #cacaca;
 }
+
+.seperator-line {
+   border-top: 2px solid #cacaca;
+   width: 20%;
+   display: flex;
+   justify-content: center;
+   margin: 2rem auto;
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.wall {
+   width: 100%;
+   justify-content: center;
+   margin: 1rem auto;
+}
+
+.brick {
+   /* background-color: rgba(0, 0, 0, 0.6); */
+   padding: 1rem;
+   /* border-radius: 2rem; */
+   border: 1px solid #cacaca;
+}
+
+.curriculum-pyramid {
+   /* border: 3px solid #cacaca; */
+   border-radius: 2%;
+   background: url('/icons/ocean.svg');
+   background-size: cover;
+   background-position: center;
+   padding: 18rem 10rem;
+   /* height: 50vh; */
+}
+
+/* .one-on-one-card {
+   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dpugbcmpg/image/upload/v1690672261/1-1_kirxbn.png');
+   background-size: cover;
+   color: #fff;
+} */
