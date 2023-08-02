@@ -1,0 +1,6 @@
+@import url('./variables.css');
+
+.bg-primary-subtle {
+  background-color: var(--tertiary-color) !important;
+  color: white !important;
+}

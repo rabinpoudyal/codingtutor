@@ -1,0 +1,78 @@
+<header class="hero-background">
+  <div class="container pt-4 pt-xl-5">
+    <div class="row">
+      <div
+        class="col-md-10 col-xl-6 col-xxl-7 text-center text-md-start mx-auto jumbotron"
+      >
+        <div class="text-left">
+          <h1 class="fw-bold">
+            <span class="hero-text text-light heading">
+              Learn Full Stack Development from the mentor who is in the
+              industry for 5+ years.</span
+            >
+          </h1>
+          <p class="fw-bolds mb-2 fw-bold subheading">
+            Get ahead on the game with proven strategies and techniques to crack
+            the first job interview.
+          </p>
+
+          <div class="pt-5 d-flex gap-3">
+            <div class="btn primary-btn">
+              <a
+                href="https://calendly.com/rabinpoudyal/15-minutes-get-to-know-session"
+                target="_blank"
+                class="text-light"
+                >Book a free 15 min session
+                <%= image_tag "svg/videocall", height: 20 %>
+                </a
+              >
+            </div>
+            <button 
+                class="btn primary-btn text-light"
+                data-bs-toggle="modal" 
+                data-bs-target="#videoModal"
+            >
+                See How it works
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-play-circle"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel">YouTube Video Modal</h5>
+      </div>
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe 
+            class="embed-responsive-item" 
+            src="https://www.youtube.com/embed/N8q7XL6E93I" 
+            allowfullscreen
+            width="100%"
+            height="500"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="191mm"
+   height="37mm"
+   viewBox="0 0 191 37"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
+   sodipodi:docname="codingtutor.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.51445126"
+     inkscape:cx="392.65139"
+     inkscape:cy="488.87041"
+     inkscape:window-width="1440"
+     inkscape:window-height="785"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showborder="false" />
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 35.499987 : 1"
+       inkscape:vp_y="0 : 999.99997 : 0"
+       inkscape:vp_z="210.00002 : 35.499987 : 1"
+       inkscape:persp3d-origin="105.00001 : -14.000003 : 1"
+       id="perspective676" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:22.5778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';white-space:pre;inline-size:189.855;display:inline;fill:#ffffff;stroke-width:0.264583"
+       x="29.315216"
+       y="63.773453"
+       id="text113"
+       transform="translate(-27.258008,-39.086955)"><tspan
+         x="29.315216"
+         y="63.773453"
+         id="tspan907"><tspan
+           style="font-family:'American Typewriter';-inkscape-font-specification:'American Typewriter Bold'"
+           id="tspan905">&lt;Coding Tutor/&gt;</tspan></tspan></text>
+    <circle
+       style="fill:#A5D7E8;stroke-width:0.264583"
+       id="path239-9"
+       cx="143.49028"
+       cy="19.029175"
+       r="3.6001143" />
+    <rect
+       style="fill:none;stroke-width:0.264583"
+       id="rect985"
+       width="1.028604"
+       height="1.542906"
+       x="179.49141"
+       y="147.60469" />
+    <rect
+       style="fill:#A5D7E8;stroke-width:0.145648"
+       id="rect991"
+       width="10.286036"
+       height="4.1144037"
+       x="149.66191"
+       y="27.258015" />
+    <circle
+       style="fill:#A5D7E8;stroke-width:0.264583"
+       id="path239"
+       cx="33.943935"
+       cy="19.029175"
+       r="3.6001143" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:23.9889px;font-family:'American Typewriter';-inkscape-font-specification:'American Typewriter Bold';fill:#4d4d4d;stroke-width:0.264583"
+       x="43.20137"
+       y="84.345528"
+       id="text890"><tspan
+         sodipodi:role="line"
+         id="tspan888"
+         style="stroke-width:0.264583"></tspan></text>
+  </g>
+</svg>

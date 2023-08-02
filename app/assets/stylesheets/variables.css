@@ -1,0 +1,7 @@
+ /* Define variables as colors */
+ :root {
+    --primary-color: #0B2447;
+    --secondary-color: #19376D;
+    --tertiary-color: #576CBC;
+    --quaternary-color: #A5D7E8;
+ }

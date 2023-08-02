@@ -1,10 +1,12 @@
 <nav
-  class="navbar navbar-light navbar-expand-md sticky-top navbar-shrink py-3"
+  class="navbar navbar-dark-theme navbar-expand-md sticky-top navbar-shrink py-3"
   id="mainNav"
 >
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="/"
-      ><span> Coding Tutor </span></a
+      ><span> 
+      <%= image_tag "svg/codingtutor.svg", height: 50 %>
+      </span></a
     ><button
       data-bs-toggle="collapse"
       class="navbar-toggler"
@@ -17,6 +19,15 @@
       <ul class="navbar-nav mx-auto">
         <li class="nav-item">
           <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/about">Curriculum</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/about">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/about">Blog</a>
         </li>
       </ul>
     </div>

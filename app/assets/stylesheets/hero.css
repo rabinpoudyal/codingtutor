@@ -1,0 +1,31 @@
+@import url('./variables.css');
+
+.hero-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dpugbcmpg/image/upload/v1690624341/next-academy-JyJwO0K5fWM-unsplash_dsrfi0.jpg');
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.primary-btn {
+  background-color: var(--secondary-color);
+  color: var(--quaternary-color);
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.subheading {
+  color: white;
+}
