@@ -60,12 +60,6 @@
          id="tspan907"><tspan
            style="font-family:'American Typewriter';-inkscape-font-specification:'American Typewriter Bold'"
            id="tspan905">&lt;Coding Tutor/&gt;</tspan></tspan></text>
-    <circle
-       style="fill:#A5D7E8;stroke-width:0.264583"
-       id="path239-9"
-       cx="143.49028"
-       cy="19.029175"
-       r="3.6001143" />
     <rect
        style="fill:none;stroke-width:0.264583"
        id="rect985"
@@ -73,27 +67,5 @@
        height="1.542906"
        x="179.49141"
        y="147.60469" />
-    <rect
-       style="fill:#A5D7E8;stroke-width:0.145648"
-       id="rect991"
-       width="10.286036"
-       height="4.1144037"
-       x="149.66191"
-       y="27.258015" />
-    <circle
-       style="fill:#A5D7E8;stroke-width:0.264583"
-       id="path239"
-       cx="33.943935"
-       cy="19.029175"
-       r="3.6001143" />
-    <text
-       xml:space="preserve"
-       style="font-weight:bold;font-size:23.9889px;font-family:'American Typewriter';-inkscape-font-specification:'American Typewriter Bold';fill:#4d4d4d;stroke-width:0.264583"
-       x="43.20137"
-       y="84.345528"
-       id="text890"><tspan
-         sodipodi:role="line"
-         id="tspan888"
-         style="stroke-width:0.264583"></tspan></text>
   </g>
 </svg>

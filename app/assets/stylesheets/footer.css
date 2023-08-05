@@ -1,0 +1,11 @@
+@import url('./variables.css');
+
+.footer {
+   background-color: var(--primary-color);
+   padding: 2rem;
+   color: white;
+}
+
+.footer a {
+   color: #cacaca;
+}

@@ -29,10 +29,11 @@
 }
 
 .brick {
-   /* background-color: rgba(0, 0, 0, 0.6); */
-   padding: 1rem;
-   /* border-radius: 2rem; */
-   border: 1px solid var(--primary-color);
+   background-color: var(--tertiary-color);
+   color: white;
+   padding: 0.8rem;
+   border-radius: 1rem;
+   border: 1px solid white;
 }
 
 .curriculum-pyramid {
@@ -44,9 +45,3 @@
    /* padding: 18rem 10rem; */
    /* height: 50vh; */
 }
-
-/* .one-on-one-card {
-   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dpugbcmpg/image/upload/v1690672261/1-1_kirxbn.png');
-   background-size: cover;
-   color: #fff;
-} */
