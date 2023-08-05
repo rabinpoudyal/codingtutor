@@ -2,7 +2,7 @@
 
 set :stage, :production
 set :branch, 'main'
-set :rails_env, 'PRODUCTION'
+set :rails_env, 'production'
 
 role :app, %w[deploy@170.64.165.188]
 role :web, %w[deploy@170.64.165.188]
