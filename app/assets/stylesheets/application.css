@@ -45,3 +45,9 @@
    /* padding: 18rem 10rem; */
    /* height: 50vh; */
 }
+
+.accordion-button:not(.collapsed) {
+   color: white;
+   background-color: var(--primary-color);
+   border-color: var(--primary-color);
+}
