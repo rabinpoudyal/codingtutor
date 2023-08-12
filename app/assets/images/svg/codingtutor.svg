@@ -2,15 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="191mm"
-   height="37mm"
-   viewBox="0 0 191 37"
+   width="169mm"
+   height="35mm"
+   viewBox="0 0 169 35"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
    sodipodi:docname="codingtutor.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -24,42 +25,59 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.51445126"
-     inkscape:cx="392.65139"
-     inkscape:cy="488.87041"
+     inkscape:zoom="1.4468942"
+     inkscape:cx="353.51583"
+     inkscape:cy="105.39817"
      inkscape:window-width="1440"
      inkscape:window-height="785"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="svg5"
      showborder="false" />
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient825">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1"
+         offset="0"
+         id="stop821" />
+      <stop
+         style="stop-color:#ff00ff;stop-opacity:1"
+         offset="1"
+         id="stop823" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient2856"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop2854" />
+    </linearGradient>
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 35.499987 : 1"
-       inkscape:vp_y="0 : 999.99997 : 0"
-       inkscape:vp_z="210.00002 : 35.499987 : 1"
-       inkscape:persp3d-origin="105.00001 : -14.000003 : 1"
+       inkscape:vp_x="0 : 33.499987 : 1"
+       inkscape:vp_y="0 : 999.99995 : 0"
+       inkscape:vp_z="210.00003 : 33.499987 : 1"
+       inkscape:persp3d-origin="105.00001 : -16.000003 : 1"
        id="perspective676" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient825"
+       id="linearGradient827"
+       x1="4.0779906"
+       y1="18.055117"
+       x2="175.5681"
+       y2="18.055117"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <text
-       xml:space="preserve"
-       style="font-weight:bold;font-size:22.5778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';white-space:pre;inline-size:189.855;display:inline;fill:#ffffff;stroke-width:0.264583"
-       x="29.315216"
-       y="63.773453"
-       id="text113"
-       transform="translate(-27.258008,-39.086955)"><tspan
-         x="29.315216"
-         y="63.773453"
-         id="tspan907"><tspan
-           style="font-family:'American Typewriter';-inkscape-font-specification:'American Typewriter Bold'"
-           id="tspan905">&lt;Coding Tutor/&gt;</tspan></tspan></text>
     <rect
        style="fill:none;stroke-width:0.264583"
        id="rect985"
@@ -68,4 +86,24 @@
        x="179.49141"
        y="147.60469" />
   </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="text" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.6105px;font-family:file-icons;-inkscape-font-specification:'file-icons, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:url(#linearGradient827);fill-opacity:0.945098;stroke:#000000;stroke-width:0.276031"
+     x="3.0586782"
+     y="25.587812"
+     id="text687"
+     transform="scale(0.95845602,1.0433447)"><tspan
+       sodipodi:role="line"
+       id="tspan685"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.6105px;font-family:file-icons;-inkscape-font-specification:'file-icons, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.276031;fill:url(#linearGradient827)"
+       x="3.0586782"
+       y="25.587812">Coding Tutor</tspan></text>
 </svg>

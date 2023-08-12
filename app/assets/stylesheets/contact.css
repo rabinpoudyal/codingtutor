@@ -1,7 +1,7 @@
 @import url('./variables.css');
 
 .contact-button {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
     color: white;
     border: none;
     padding: 1rem 1rem;
@@ -16,5 +16,5 @@
     font-size: 1.4rem;
     color: white;
     margin: 0 1rem;
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
 }
