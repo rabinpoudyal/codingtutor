@@ -16,6 +16,13 @@
   border-radius: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    padding: 2rem;
+    border-radius: 0px;
+  }
+}
+
 .primary-btn {
   background-color: var(--secondary-color);
   color: var(--quaternary-color);
