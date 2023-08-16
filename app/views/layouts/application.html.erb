@@ -6,7 +6,6 @@
     <title>Home - Coding Tutor</title>
     <meta property="og:type" content="website">
     <meta name="description" content="Master the art of coding with CodingTutor.Online – the ultimate platform for freshers looking to dive into the world of tech. Our expert tutors provide comprehensive courses, personalized problem-solving guidance, and real-world project support. Prepare for success with mock tests and access abundant coding resources. Start your journey today and unlock endless opportunities in the exciting field of coding.">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -16,6 +15,11 @@
   </head>
 
   <body>
+
+    <% flash.each do |key, value| %>
+      <div class="alert alert-success"><%= value %></div>
+    <% end %>
+
     <%= render partial: 'shared/navbar' %>
     <%= yield %>
     <%= render partial: 'shared/footer' %>

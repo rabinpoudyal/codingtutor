@@ -51,3 +51,12 @@
    background-color: var(--primary-color);
    border-color: var(--primary-color);
 }
+
+.alert {
+   background-color: var(--primary-color);
+   color: white;
+   border: 1px solid var(--primary-color);
+   text-align: center;
+   margin: 0rem !important;
+   border-radius: 0rem !important;
+}
