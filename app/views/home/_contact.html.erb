@@ -14,7 +14,7 @@
     <div class="row d-flex justify-content-center">
       <div class="col-md-6 col-xl-4">
       <div>
-        <%= form_with(url: home_contacts_path, method: :post, data: { bs_theme: 'light' }, class: 'p-3 p-xl-4') do |form| %>
+        <%= form_with(url: home_contacts_path, method: :post, data: { bs_theme: 'light' }, class: 'p-3 p-xl-4', id: 'contact-form') do |form| %>
           <div class="mb-3">
             <%= form.text_field :name, class: 'form-control', id: 'name-1', placeholder: 'Name' %>
           </div>
@@ -25,7 +25,7 @@
             <%= form.text_area :message, class: 'form-control', id: 'message-1', rows: 6, placeholder: 'Your Inquiry' %>
           </div>
           <div>
-            <%= form.submit class: 'contact-button shadow d-block w-100' do %>
+            <%= form.submit class: 'contact-button shadow d-block w-100 g-recaptcha', 'data-sitekey': "6Lcnyq4nAAAAAHWq7pCyV1XIaSQw0mrhEqAEylq3", 'data-callback': 'onSubmit', 'data-action': 'submit' do %>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="white" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
               Submit
             <% end %>
