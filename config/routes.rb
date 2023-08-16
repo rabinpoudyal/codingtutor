@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   root "home#index"
   post 'home/contacts', to: 'home#contacts'
   get '/curriculum', to: 'home#curriculum'
+  get '/pricing', to: 'home#pricing'
 end
