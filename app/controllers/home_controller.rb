@@ -26,6 +26,9 @@ class HomeController < ApplicationController
   def curriculum 
   end
 
+  def blog
+  end
+
   private 
 
   def contact_params

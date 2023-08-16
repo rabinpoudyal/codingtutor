@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   post 'home/contacts', to: 'home#contacts'
   get '/curriculum', to: 'home#curriculum'
   get '/pricing', to: 'home#pricing'
+  get '/blog', to: 'home#blog'
 end
