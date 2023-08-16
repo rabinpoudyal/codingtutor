@@ -23,6 +23,9 @@ class HomeController < ApplicationController
   def abouat
   end
 
+  def curriculum 
+  end
+
   private 
 
   def contact_params
