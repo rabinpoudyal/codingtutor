@@ -1,7 +1,7 @@
 @import url('./variables.css');
 
 .hero-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dpugbcmpg/image/upload/v1690624341/next-academy-JyJwO0K5fWM-unsplash_dsrfi0.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dpugbcmpg/image/upload/v1692183825/Optimized-next-academy-JyJwO0K5fWM-unsplash_dsrfi0_wjzz80.jpg');
   background-size: cover;
   background-position: center;
   height: 90vh;
