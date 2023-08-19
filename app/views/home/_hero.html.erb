@@ -2,59 +2,79 @@
   <div class="container pt-4 pt-xl-5">
     <div class="row">
       <div
-        class="col-md-10 col-xl-6 col-xxl-7 text-center text-md-start mx-auto jumbotron"
+        class="col-md-12 col-xl-12 col-xxl-12 text-center text-md-start mx-auto jumbotron"
       >
-        <div class="text-left">
-          <h1 class="fw-bold">
-            <span class="hero-text text-light heading">
-              Master Full Stack Development with a Seasoned Industry Mentor of 5+ Years
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-6 col-xl-6 col-xxl-6 text-center text-md-start mx-auto">
+            <h1 class="fw-bold">
+              <span class="hero-text text-light heading">
+                Master Full Stack Development with a Seasoned Industry Mentor of
+                5+ Years
               </span>
-          </h1>
-          <p class="fw-bolds mb-2 fw-bold subheading">
-            Uncover Proven Strategies and Techniques to Excel in Your First Job Interview.
-          </p>
+            </h1>
+            <p class="fw-bolds mb-2 fw-bold subheading">
+              Uncover Proven Strategies and Techniques to Excel in Your First
+              Job Interview.
+            </p>
 
-          <div class="pt-5 d-flex gap-3 flex-wrap">
-            <div class="btn primary-btn">
-              <a
-                href="https://calendly.com/rabinpoudyal/15-minutes-get-to-know-session"
-                target="_blank"
-                class="text-light"
-                >Free 15 min session
-                <%= image_tag "svg/videocall.svg", height: 20 %>
-                </a
-              >
-            </div>
-            <button 
+            <div class="pt-5 d-flex gap-3 flex-wrap">
+              <div class="btn primary-btn">
+                <a
+                  href="https://calendly.com/rabinpoudyal/15-minutes-get-to-know-session"
+                  target="_blank"
+                  class="text-light"
+                  >Free 15 min session <%= image_tag "svg/videocall.svg",
+                  height: 20 %>
+                </a>
+              </div>
+              <button
                 class="btn primary-btn text-light"
-                data-bs-toggle="modal" 
+                data-bs-toggle="modal"
                 data-bs-target="#videoModal"
-            >
-                See How it works
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="29"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="feather feather-play-circle"
               >
-                <circle cx="12" cy="12" r="10"></circle>
-                <polygon points="10 8 16 12 10 16 10 8"></polygon>
-              </svg>
-            </button>
+                See How it works
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="29"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-play-circle"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="10 8 16 12 10 16 10 8"></polygon>
+                </svg>
+              </button>
+            </div>
           </div>
+          
+          <div class="col-md-6 col-xl-6 col-xxl-6 text-center text-md-start mx-auto">
+            <img
+              src="/icons/hero.png"
+              alt="hero"
+              class="img-fluid"
+              height="500"
+            />
+          </div>
+          
         </div>
       </div>
     </div>
   </div>
 </header>
 
-<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+<div
+  class="modal fade"
+  id="videoModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="videoModalLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -62,9 +82,9 @@
       </div>
       <div class="modal-body">
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe 
-            class="embed-responsive-item" 
-            src="https://www.youtube.com/embed/N8q7XL6E93I" 
+          <iframe
+            class="embed-responsive-item"
+            src="https://www.youtube.com/embed/N8q7XL6E93I"
             allowfullscreen
             width="100%"
             height="500"
