@@ -1,13 +1,18 @@
 @import url('./variables.css');
 
 .hero-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dpugbcmpg/image/upload/v1692183825/Optimized-next-academy-JyJwO0K5fWM-unsplash_dsrfi0_wjzz80.jpg');
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dpugbcmpg/image/upload/v1692183825/Optimized-next-academy-JyJwO0K5fWM-unsplash_dsrfi0_wjzz80.jpg'); */
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background: #000428;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
 }
 
 .jumbotron {

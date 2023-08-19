@@ -33,3 +33,5 @@
 .env
 .env.production
 .env.staging
+
+.DS_Store
